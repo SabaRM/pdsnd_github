@@ -196,7 +196,9 @@ def user_stats(df):
         recent_birth_year = df['Birth Year'].max()
         popular_birth_year = df['Birth Year'].mode()[0]
 
-        print('\nThe earliest birth year: {}\nThe most recent birth year: {}\nThe most common birth year: {}'.format(earliest_birth_year, recent_birth_year,popular_birth_year))
+        print('\nThe earliest birth year: {}\n'.format(earliest_birth_year))
+        print('The most recent birth year: {}\n'.format(recent_birth_year))
+        print('The most common birth year: {}\n'.format(popular_birth_year))
 
     else: print('\nSorry! There is no Birth year information for this dataset')
 
