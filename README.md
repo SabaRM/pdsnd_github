@@ -7,8 +7,10 @@ Project Title
 ### My project calculates US bikeshare statistics based on information inputted by an end user
 Describes what my project is about and what it does
 
-### Files used
-Include the files used
+### Files used: bikeshare.py,chicago.csv, new_york_city.csv,washington.csv
+Lists the files used in the Python project
 
-### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+### https://www.shanelynn.ie/select-pandas-dataframe-rows-and-columns-using-iloc-loc-and-ix/
+###https://stackoverflow.com/questions/10202570/pandas-dataframe-find-row-where-values-for-column-is-maximal
+###https://jakevdp.github.io/PythonDataScienceHandbook/03.08-aggregation-and-grouping.html
+Links to blogposts and pages I consulted whilst coding the project
