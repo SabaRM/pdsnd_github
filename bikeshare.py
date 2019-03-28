@@ -98,7 +98,7 @@ def time_stats(df,day,month):
      months = ['january', 'february', 'march', 'april', 'may', 'june']
      pop_month_word = months[popular_month - 1]
      print("The most popular month is: ", pop_month_word.upper())
-    else: print("Common month not displayed as a specific month was chosen. Please go back and type 'all' if you would like to know the most common month for this dataset.")
+    else: print("Common month not relevant. Please go back and type 'all' if you would like to know the most common month for this dataset.")
 
     # Displays the most common day of week only if the user wants chooses to analyse 'all' days
     if day == 'all':
