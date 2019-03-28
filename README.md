@@ -4,8 +4,8 @@ Includes the date I created this project and README file.
 ### Saba's first Python project: **Analysing US bikeshare data**
 Project Title
 
-### Description
-Describe what your project is about and what it does
+### My project calculates US bikeshare statistics based on information inputted by an end user
+Describes what my project is about and what it does
 
 ### Files used
 Include the files used
