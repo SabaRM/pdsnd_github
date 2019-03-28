@@ -58,13 +58,8 @@ def load_data(city, month, day):
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day
     """
-    if city == 'chicago':
-       filename = CITY_DATA.get('chicago')
-    elif city == 'new york city':
-       filename = CITY_DATA.get('new york city')
-    elif city == 'washington':
-       filename = CITY_DATA.get('washington')
 
+    filename = CITY_DATA.get(city)
     print("filename is:",filename)
 
     df = pd.read_csv(filename)
@@ -103,7 +98,7 @@ def time_stats(df,day,month):
      months = ['january', 'february', 'march', 'april', 'may', 'june']
      pop_month_word = months[popular_month - 1]
      print("The most popular month is: ", pop_month_word.upper())
-    else: print("Common month not displayed as a specific month was chosen. Please go back and type 'all' if you would like to know the most common month for this dataset.")
+    else: print("Common month not relevant. Please go back and type 'all' if you would like to know the most common month for this dataset.")
 
     # Displays the most common day of week only if the user wants chooses to analyse 'all' days
     if day == 'all':
@@ -201,7 +196,9 @@ def user_stats(df):
         recent_birth_year = df['Birth Year'].max()
         popular_birth_year = df['Birth Year'].mode()[0]
 
-        print('\nThe earliest birth year: {}\nThe most recent birth year: {}\nThe most common birth year: {}'.format(earliest_birth_year, recent_birth_year,popular_birth_year))
+        print('\nThe earliest birth year: {}\n'.format(earliest_birth_year))
+        print('The most recent birth year: {}\n'.format(recent_birth_year))
+        print('The most common birth year: {}\n'.format(popular_birth_year))
 
     else: print('\nSorry! There is no Birth year information for this dataset')
 
@@ -214,7 +211,7 @@ def display_data(city):
     filename = CITY_DATA.get(city)
     raw_data = pd.read_csv(filename)
     pd.options.display.max_rows = 400000
-# The maximum number of rows chosen is 400000 because each dataset roughly had this many rows    
+# The maximum number of rows chosen is 400000 because each dataset roughly had this many rows
     data_rows = 5
     while True:
         Data_Display = (input("\nWould you like to view the raw data? Enter yes or no (Note: 5 extra rows of data will be displayed each time you say 'yes').\n"))
